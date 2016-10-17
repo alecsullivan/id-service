@@ -1,0 +1,12 @@
+#LOCAL Profile
+
+#id-service runs on localhost:8081
+#consul is on localhost:8500
+
+server: 
+ port: 8081
+spring:
+ cloud:
+  consul:
+   host: localhost
+   port: 8500
