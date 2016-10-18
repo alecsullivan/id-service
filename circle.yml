@@ -1,3 +1,7 @@
 dependencies:
   post:
     - ./gradlew awsBundle
+
+general:
+  artifacts:
+    - "build/libs"
