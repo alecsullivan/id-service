@@ -9,7 +9,7 @@ server:
 spring:
  cloud:
   consul:
-   host: discovery.dorffi.com
+   host: discovery.dev.dorffi.com
    port: 8500
    discovery:    
     ipAddress: ${PUBLIC_IP}
