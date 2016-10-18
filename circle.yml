@@ -5,10 +5,9 @@ dependencies:
 general:
   artifacts:
     - "build/libs"
-    - "build/distributions"
 
 deployment:
-  developemt:
+  development:
     branch: master
     codedeploy:
       id-service:
