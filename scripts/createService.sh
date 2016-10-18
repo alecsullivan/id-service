@@ -1,1 +1,1 @@
-ln -s /opt/id-service/*.jar /etc/init.d/id-service
+[ -f /etc/init.d/id-service ] && ln -s /opt/id-service/*.jar /etc/init.d/id-service
