@@ -1,6 +1,6 @@
 dependencies:
   post:
-    - ./gradlew jar
+    - ./gradlew awsBundle
 
 general:
   artifacts:
