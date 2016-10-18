@@ -18,5 +18,5 @@ deployment:
           revision_type: S3
           s3_location:
             bucket: dev.dorffi.com
-            key_pattern: document-service-{BRANCH}-{SHORT_COMMIT}-{BUILD_NUM}
+            key_pattern: id-service-{BRANCH}-{SHORT_COMMIT}-{BUILD_NUM}
         deployment_group: development
