@@ -4,10 +4,10 @@ files:
   - source: build/libs
     destination: /opt/id-service
 hooks:
-  #ApplicationStop:
-  #  - location: scripts/stop.sh
-  #    timeout: 30
-  #    runas: root
+  ApplicationStop:
+    - location: scripts/stop.sh
+      timeout: 30
+      runas: root
   AfterInstall:
     - location: scripts/createService.sh
       timeout: 30
