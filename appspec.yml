@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: build/libs/*.jar
+    destination: /tmp
+hooks:
+  ApplicationStart:
+    - location: scripts/start.sh
+      timeout: 60
