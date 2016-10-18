@@ -1,3 +1,3 @@
 #!/bin/bash
 
-java -jar /tmp/dorffi*.jar
+java -jar -Dspring.profiles.active=dev /tmp/dorffi*.jar
