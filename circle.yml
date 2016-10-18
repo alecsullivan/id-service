@@ -6,3 +6,17 @@ general:
   artifacts:
     - "build/libs"
     - "build/distributions"
+
+deployment:
+  developemt:
+    branch: master
+    codedeploy:
+      id-service:
+        application_root: /
+        region: us-west-1
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: dev.dorffi.com
+            key_pattern: document-service-{BRANCH}-{SHORT_COMMIT}-{BUILD_NUM}
+        deployment_group: development
