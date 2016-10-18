@@ -1,3 +1,7 @@
+dependencies:
+  post:
+    - ./gradlew jar
+
 general:
   artifacts:
     - "build/libs"
