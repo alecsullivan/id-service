@@ -19,4 +19,4 @@ deployment:
           s3_location:
             bucket: dev.dorffi.com
             key_pattern: id-service-{BRANCH}-{SHORT_COMMIT}-{BUILD_NUM}
-        deployment_group: development
+        deployment_group: dev-dorffi-id-service
