@@ -1,3 +1,1 @@
-#!/bin/bash
-
-java -jar -Dspring.profiles.active=dev /tmp/dorffi*.jar
+java -jar -Dspring.profiles.active=dev build/libs/dorffi*.jar > /var/log/id-service.log 2>&1 &
