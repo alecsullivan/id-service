@@ -1,0 +1,1 @@
+ln -s /opt/id-service/*.jar /etc/init.d/id-service
