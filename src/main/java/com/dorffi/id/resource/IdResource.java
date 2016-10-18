@@ -1,20 +1,20 @@
-package cloudstructure.resource;
+package com.dorffi.id.resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import cloudstructure.service.IdGeneratorService;
+import com.dorffi.id.service.IdService;
 
 @RestController
 @RequestMapping("/id-generator")
-public class IdGeneratorResource {
+public class IdResource {
 
-	private IdGeneratorService service;
+	private IdService service;
 	
 	@Autowired
-	public IdGeneratorResource(IdGeneratorService service) {
+	public IdResource(IdService service) {
 		this.service = service;
 	}
 	

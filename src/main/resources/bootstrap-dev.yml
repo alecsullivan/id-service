@@ -1,16 +1,15 @@
 #DEV Profile
 
 #id-service runs on dedicated dev machine, port 8080
-#id-service registers itself with consul using PUBLIC_IP from dev machine, on port 8080
+#id-service registers itself with consul using IP from dev machine, on port 8080
 #consul is on discovery.dorffi.com, port 8500
 
-server: 
- port: 8080
+server:
+  port: 8080
 spring:
- cloud:
-  consul:
-   host: discovery.dev.dorffi.com
-   port: 8500
-   discovery:    
-    ipAddress: ${PUBLIC_IP}
-    port: 8080
+  cloud:
+    consul:
+      host: discovery.dev.dorffi.com
+      port: 8500
+      discovery:
+        port: 8080

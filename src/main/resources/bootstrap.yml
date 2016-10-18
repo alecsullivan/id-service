@@ -7,13 +7,14 @@
 # If not otherwise stated, the default profile is LOCAL
 
 spring:
- application:
-  name: id-service
- profiles:
-  active: local
- cloud:
-  config:
-   enabled: false
-  consul:
-   discovery:
-    preferIpAddress: true
+  application:
+    name: id-service
+  profiles:
+    active: local
+  cloud:
+    config:
+      enabled: false
+    consul:
+      discovery:
+        preferIpAddress: true
+        
