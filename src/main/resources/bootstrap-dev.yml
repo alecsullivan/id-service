@@ -1,7 +1,7 @@
 #DEV Profile
 
 #id-service runs on dedicated dev machine, port 8080
-#id-service registers itself with consul using IP from dev machine, on port 8080
+#id-service registers itself on port 8080
 #consul is on discovery.dorffi.com, port 8500
 
 server:

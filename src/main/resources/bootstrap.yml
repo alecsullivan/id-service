@@ -2,7 +2,6 @@
 
 # Application is 'id-service'
 # Cloud Config is currently disabled, all properties are served from yml files.
-# Consul registration is done by IP, not hostname.
 
 # If not otherwise stated, the default profile is LOCAL
 
@@ -14,7 +13,4 @@ spring:
   cloud:
     config:
       enabled: false
-    consul:
-      discovery:
-        preferIpAddress: true
         
