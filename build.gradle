@@ -1,13 +1,9 @@
 buildscript {
-	ext {
-		springBootVersion = '1.4.1.RELEASE'
-	}
 	repositories {
 		mavenCentral()
 	}
 	dependencies {
-		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-		classpath("se.transmode.gradle:gradle-docker:1.2")
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.1.RELEASE")
 	}
 }
 
@@ -38,7 +34,8 @@ repositories {
 
 dependencyManagement {
   imports {
-    mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Camden.SR1'
+    mavenBom 'org.springframework.boot:spring-boot-starter-parent:1.2.1.RELEASE'
+    mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Camden.SR1'    
   }
 }
 
@@ -46,8 +43,8 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile("org.springframework.boot:spring-boot-starter-actuator")
 	compile('org.springframework.cloud:spring-cloud-starter-config')
-	compile('org.springframework.cloud:spring-cloud-starter-consul-all')
-	compile('org.springframework.cloud:spring-cloud-consul-discovery')
+	compile('org.springframework.cloud:spring-cloud-starter-eureka')
+	
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
