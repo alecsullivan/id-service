@@ -18,6 +18,15 @@ springBoot {
 	executable = true
 }
 
+task aws(type: Copy) {
+  from 'appspec.yml'
+  from "build/libs"
+  into 'build/aws'
+  include '*.yml'
+  include '*.jar'
+}
+aws.dependsOn assemble
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 

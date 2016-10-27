@@ -1,17 +1,17 @@
 dependencies:
   post:
-    - ./gradlew assemble
+    - ./gradlew aws
 
 general:
   artifacts:
-    - "build/libs"
+    - "build/aws"
 
 deployment:
   development:
     branch: master
     codedeploy:
       id-service:
-        application_root: /build/libs
+        application_root: /build/aws
         region: us-west-1
         revision_location:
           revision_type: S3
