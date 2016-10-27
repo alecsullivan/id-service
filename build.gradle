@@ -18,13 +18,6 @@ springBoot {
 	executable = true
 }
 
-task awsBundle(type: Zip) {
-    from('build/libs') {
-	include '*.jar'
-    }
-}
-awsBundle.dependsOn(build)
-
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 

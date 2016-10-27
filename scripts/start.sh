@@ -1,2 +1,2 @@
 #!/bin/bash
-service dorffi-id-service start
+service id-service start

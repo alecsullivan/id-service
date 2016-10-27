@@ -1,18 +1,10 @@
 #DEV Profile
 
 #id-service runs on dedicated dev machine, port 8080
-#id-service registers itself on port 8080
-#consul is on discovery.dorffi.com, port 8500
+#eureka is on discovery.dorffi.com, port 8080
 
 server:
   port: 8080
-spring:
-  cloud:
-    consul:
-      host: discovery.dev.dorffi.com
-      port: 8500
-      discovery:
-        port: 8080
 eureka:
   shouldUseDns: true
   client:
