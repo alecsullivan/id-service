@@ -1,6 +1,6 @@
 dependencies:
   post:
-    - ./gradlew build
+    - ./gradlew assemble
 
 general:
   artifacts:
