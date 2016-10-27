@@ -19,11 +19,10 @@ springBoot {
 }
 
 task aws(type: Copy) {
-  from 'appspec.yml'
-  from "build/libs"
+  from 'build/libs'
+  from 'aws'
   into 'build/aws'
-  include '*.yml'
-  include '*.jar'
+  exclude '*.jar.original'
 }
 aws.dependsOn assemble
 
