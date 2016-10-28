@@ -1,6 +1,6 @@
 #LOCAL Profile
 
-#id-service runs on localhost:8081
+#service runs on localhost:8081
 #eureka server is on localhost:8080
 
 server: 

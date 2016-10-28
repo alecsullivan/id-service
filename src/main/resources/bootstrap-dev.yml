@@ -1,6 +1,6 @@
 #DEV Profile
 
-#id-service runs on dedicated dev machine, port 8080
+#service runs on dedicated dev machine, port 8080
 #eureka is located via the discovery.dorffi.com domain.
 
 server:
