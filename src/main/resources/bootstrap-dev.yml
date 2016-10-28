@@ -5,9 +5,9 @@
 
 server:
   port: 8080
-eureka:
-  shouldUseDns: true
+eureka:  
   client:
+    shouldUseDns: true
     region: us-west-1
     serviceUrl:
-      defaultZone: http://us-west-1a.discovery.dorffi.com:8080/eureka/v2,http://us-west-1c.discovery.dorffi.com:8080/eureka/v2
+      defaultZone: http://discovery.dorffi.com:8080/eureka/v2
