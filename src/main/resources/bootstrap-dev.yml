@@ -7,7 +7,7 @@ server:
   port: 8080
 eureka:  
   client:
-    shouldUseDns: true
-    region: us-west-1
-    serviceUrl:
-      defaultZone: http://discovery.dorffi.com:8080/eureka/v2
+    useDnsForFetchingServiceUrls: true
+    eurekaServerDNSName: discovery.dorffi.com
+    eurekaServerPort: 8080
+    eurekaServerURLContext: eureka/v2
