@@ -7,4 +7,5 @@ server:
   port: 8080
 eureka:
   shouldUseDns: true
-  eurekaServer.domainName: discovery.dorffi.com
+  eurekaServer:
+    domainName: discovery.dorffi.com
