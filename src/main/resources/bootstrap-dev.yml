@@ -8,4 +8,6 @@ server:
 eureka:
   shouldUseDns: true
   eurekaServer:
+    context: eureka/v2
     domainName: discovery.dorffi.com
+  region: us-west-1
