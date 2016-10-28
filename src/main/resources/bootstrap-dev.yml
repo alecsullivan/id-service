@@ -9,6 +9,5 @@ eureka:
   shouldUseDns: true
   client:
     region: us-west-1
-  eurekaServer:
-    context: eureka/v2
-    domainName: discovery.dorffi.com
+    serviceUrl:
+      defaultZone: http://us-west-1a.discovery.dorffi.com:8080/eureka/v2,http://us-west-1c.discovery.dorffi.com:8080/eureka/v2
