@@ -9,7 +9,7 @@ ENV=`ec2-describe-tags --region $REGION --filter "resource-type=instance" --filt
 echo "Located the Environment tag: $ENV"
 
 APP_NAME=`ls /var/id-service/id-service*.jar | cut -d '/' -f4 | sed 's/.jar//g'`
-echo "JAVA_OPTS=\"\$JAVA_OPTS -Dspring.profiles.active=$ENV\"" > /var/id-service/$APP_NAME.conf
+echo "JAVA_OPTS=\"\$JAVA_OPTS -Dspring.profiles.active=$ENV -Deureka.region=$REGION\"" > /var/id-service/$APP_NAME.conf
 echo "Created/updated JAVA_OPTS in $APP_NAME.conf."
 
 if [ ! -L /etc/init.d/id-service ]
